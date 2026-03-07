@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bewakoof Clone</title>
+
+
+  <link rel="stylesheet" href="./index.css" />
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+
+
+<div class="top-bar">
+  <div class="left">
+    <span>Offers</span>
+    <span>Fanbook</span>
+    <span>Download App</span>
+    <span>Find a store near me</span>
+  </div>
+  <div class="right">
+    <span>Contact Us</span>
+    <span>Track Order</span>
+  </div>
+</div>
+
+
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" class="logo" />
+      <ul>
+  <li><a href="men.html">MEN</a></li>
+  <li><a href="women.html">WOMEN</a></li>
+  <li><a href="mobile.html">MOBILE COVERS</a></li>
+</ul>
+  </div>
+
+  <div class="nav-right">
+    <input type="text" placeholder="Search by products" />
+   <button class="login-btn" onclick="openLogin()">Login</button>
+
+
+<div class="overlay" id="overlay" onclick="closeLogin()"></div>
+
+
+<div class="login-panel" id="loginPanel">
+<span class="close-btn" onclick="closeLogin()">×</span>
+
+
+<h2>Login</h2>
+
+
+<input type="email" placeholder="Email" />
+<input type="password" placeholder="Password" />
+
+
+<button>Sign In</button>
+</div>
+    <span>👜</span>
+  </div>
+</nav>
+
+
+
+ <div class="category-nav">
+
+  <div class="gender-toggle">
+    <button class="active">MEN</button>
+   <a href="index.html" >WOMEN</a>
+  </div>
+
+
+  <div class="category-scroll">
+    <div class="category-links">
+      <a href="#">WINTERWEAR</a>
+      <a href="#">SHOP NOW</a>
+      <a href="#">PLUS SIZE</a>
+      <a href="#">BWKF X GOOGLE AI</a>
+      <a href="#">ACCESSORIES</a>
+      <a href="#">CUSTOMIZATION</a>
+      <a href="#">HEAVY DUTY</a>
+      <a href="#">BEWAKOOF AIR</a>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="banner-slider">
+  <div class="banner-card">
+    <img src="https://images.bewakoof.com/uploads/grid/app/1x1-BwkfVAULT-Capsule-Drop3-Lowkey-Men-04-1770401270.jpg" />
+    <div class="banner-text">VIRAL ALERT</div>
+  </div>
+
+  <div class="banner-card">
+    <img src="https://images.bewakoof.com/uploads/grid/app/1x1-DOTW-men-1770359363.jpg" />
+    <div class="banner-text center"></div>
+  </div>
+
+  <div class="banner-card">
+    <img src="https://images.bewakoof.com/uploads/grid/app/1x1-shirts--1770401268.jpg" />
+    <div class="banner-text bottom"> T-SHIRTS</div>
+  </div>
+  
+  <div class="banner-card">
+    <img src="https://images.bewakoof.com/uploads/grid/app/1x1-shirts--1770401268.jpg" />
+    <div class="banner-text bottom"> T-SHIRTS</div>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  $('.banner-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 600,
+        settings: { slidesToShow: 1 }
+      }
+    ]
+  });
+  function openLogin() {
+  document.getElementById("loginPanel").classList.add("active");
+  document.getElementById("overlay").classList.add("active");
+}
+
+function closeLogin() {
+  document.getElementById("loginPanel").classList.remove("active");
+  document.getElementById("overlay").classList.remove("active");
+}
+</script>
+
+</body>
+</html>
