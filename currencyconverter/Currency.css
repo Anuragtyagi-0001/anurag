@@ -1,0 +1,59 @@
+.converter-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  margin: auto;
+}
+
+.custom-input {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.custom-input img {
+  width: 24px;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.result-container {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.res-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.tax .val { color: #ef4444; }
+
+.divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 12px 0;
+}
+
+.total {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.loader-text {
+  text-align: center;
+  color: #6366f1;
+  padding: 20px;
+  font-weight: 500;
+}
