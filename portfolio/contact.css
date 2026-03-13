@@ -1,0 +1,17 @@
+.Contact {
+  padding: 40px;
+}
+
+.contact-card {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 20px;
+  background: #eee;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-card:hover {
+  background: #ddd;
+}

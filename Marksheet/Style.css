@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f2f2f2;
+  min-height: 100vh;
+}
+
+/* ===== LEFT FORM ===== */
+.formcontainer {
+  width: 50%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formcontainer h1,
+.formcontainer h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formcontainer input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ===== TABLE ===== */
+table {
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+table input {
+  width: 100%;
+  padding: 5px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* ===== RIGHT MARKSHEET ===== */
+.markcontainer {
+  width: 50%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.markcontainer h1,
+.markcontainer h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.markcontainer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.markcontainer h3,
+.markcontainer h2 {
+  margin-top: 10px;
+}
+
+/* ===== PRINT STYLE ===== */
+@media print {
+  .formcontainer,
+  button {
+    display: none;
+  }
+
+  .markcontainer {
+    width: 100%;
+    box-shadow: none;
+  }
+}
